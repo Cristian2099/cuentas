@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/md_red_400"
+        android:elevation="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/title_activity_principal"
+            android:textSize="20sp"
+            android:textColor="@color/md_white_1000"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/txvEligePerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/toolBarPrincipal"
+
+        android:text="@string/please_choose_profile"
+        android:textSize="40sp"/>
+
+    <Button
+        android:id="@+id/btnJefe"
+
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/txvEligePerfil"
+
+        android:text="@string/boss"
+        android:textSize="20sp"
+        android:textColor="@color/md_white_1000"
+
+        android:background="@drawable/selector_botones_principal"
+        android:elevation="10dp"
+
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:id="@+id/btnConfigJefe"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/txvEligePerfil"
+        android:layout_toEndOf="@id/btnJefe"
+
+        android:elevation="5dp"
+        android:src="@drawable/config"
+        android:tint="@color/md_white_1000"
+        android:background="@drawable/selector_botones_principal">
+
+    </ImageButton>
+
+    <Button
+        android:id="@+id/btnCuentas"
+
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnJefe"
+
+        android:text="@string/realizarCuentas"
+        android:textSize="20sp"
+        android:textColor="@color/md_white_1000"
+
+        android:background="@drawable/selector_botones_principal"
+        android:elevation="10dp"
+
+        android:onClick="onClick"/>
+
+    <ImageButton
+        android:id="@+id/btnConfigEmpleado"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/btnJefe"
+        android:layout_toEndOf="@id/btnCuentas"
+
+        android:elevation="5dp"
+        android:src="@drawable/config"
+        android:tint="@color/md_white_1000"
+        android:background="@drawable/selector_botones_principal">
+
+    </ImageButton>
+
+</RelativeLayout>
+
+

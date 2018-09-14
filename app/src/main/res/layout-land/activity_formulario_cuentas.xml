@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_yellow_100">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/md_red_400"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/title_activity_principal"
+                android:textSize="20sp"
+                android:textColor="@color/md_white_1000"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="220dp"
+            android:layout_height="160dp"
+
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="70dp"
+
+            android:layout_alignParentLeft="true"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="60dp"
+
+                android:text="Productos"
+                android:textSize="20sp"
+                android:textColor="@color/md_red_400"
+
+                android:padding="4dp"
+                android:background="@drawable/marcos"/>
+
+            <EditText
+                android:id="@+id/txtProductoUnoTotal"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="10dp"
+
+                android:hint="Enviados"
+                android:inputType="number"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/txtProductoDosTotal"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="95dp"
+                android:layout_marginStart="10dp"
+
+                android:hint="Enviados"
+                android:inputType="number"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/txtProductoUnoRestante"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="85dp"
+
+                android:hint="Sin vender"
+                android:inputType="number"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/txtProductoDosRestante"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="95dp"
+                android:layout_marginStart="85dp"
+
+                android:hint="Sin vender"
+                android:inputType="number"
+                android:textSize="15sp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+
+                android:layout_marginTop="57dp"
+                android:layout_marginStart="165dp"
+                android:elevation="10dp">
+
+                <TextView
+                    android:id="@+id/txtResultadoRestaProductoUno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:textColor="@color/md_red_400"
+                    android:textAlignment="center"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+
+                android:layout_marginTop="103dp"
+                android:layout_marginStart="165dp">
+                <TextView
+                    android:id="@+id/txtResultadoRestaProductoDos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:textColor="@color/md_red_400"
+                    android:textAlignment="center"/>
+
+            </android.support.v7.widget.CardView>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="70dp"
+
+            android:layout_alignParentEnd="true"
+
+            app:cardUseCompatPadding="true"
+            app:cardElevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="14dp"
+
+                android:text="Comisiones"
+                android:textSize="18sp"
+                android:textColor="@color/md_red_400"
+
+                android:padding="4dp"
+                android:background="@drawable/marcos"/>
+
+            <EditText
+                android:id="@+id/txtComisionProductoUno"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="30dp"
+
+                android:hint="por unidad"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/txtComisionProductoDos"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="30dp"
+
+                android:hint="Por unidad"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="370dp"
+            android:layout_height="300dp"
+
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="5dp"
+
+            android:layout_centerHorizontal="true"
+
+            app:cardUseCompatPadding="true"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+
+                android:text="Gastos"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/md_red_400"
+
+                android:padding="4dp"
+                android:background="@drawable/marcos"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="-30dp">
+
+                <EditText
+                    android:id="@+id/txtNombreGastoUno"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="10dp"
+
+                    android:hint="Nombre gasto 1"
+                    android:inputType="text"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/txtCantidadGastoUno"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="160dp"
+
+                    android:hint="Cantidad"
+                    android:inputType="number"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/txtValorGastoUno"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="260dp"
+
+                    android:hint="Valor"
+                    android:inputType="number"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/txtNombreGastoDos"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="120dp"
+                    android:layout_marginStart="10dp"
+
+                    android:hint="Nombre gasto 2"
+                    android:inputType="text"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/txtCantidadGastoDos"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="120dp"
+                    android:layout_marginStart="160dp"
+
+                    android:hint="Cantidad"
+                    android:inputType="number"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/txtValorGastoDos"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="120dp"
+                    android:layout_marginStart="260dp"
+
+                    android:hint="Valor"
+                    android:inputType="number"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/txtNombreGastoTres"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="160dp"
+                    android:layout_marginStart="10dp"
+
+                    android:hint="Nombre gasto 3"
+                    android:inputType="text"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/txtCantidadGastoTres"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="160dp"
+                    android:layout_marginStart="160dp"
+
+                    android:hint="Cantidad"
+                    android:inputType="number"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/txtValorGastoTres"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="160dp"
+                    android:layout_marginStart="260dp"
+
+                    android:hint="Valor"
+                    android:inputType="number"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/txtNombreGastoCuatro"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="200dp"
+                    android:layout_marginStart="10dp"
+
+                    android:hint="Nombre gasto 4"
+                    android:inputType="text"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/txtCantidadGastoCuatro"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="200dp"
+                    android:layout_marginStart="160dp"
+
+                    android:hint="Cantidad"
+                    android:inputType="number"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/txtValorGastoCuatro"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="200dp"
+                    android:layout_marginStart="260dp"
+
+                    android:hint="Valor"
+                    android:inputType="number"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="250dp"
+                    android:layout_marginStart="25dp"
+
+                    android:text="@string/sugerencias"
+                    android:textSize="15sp"
+                    android:textColor="@color/md_red_400" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="510dp"
+            android:layout_marginStart="130dp"
+
+            android:layout_alignParentStart="true"
+
+            android:text="Calcular"
+            android:textColor="@color/md_white_1000"
+
+            android:background="@drawable/selector_botones_principal"
+            android:elevation="10dp"
+
+            android:onClick="onClick"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="87dp"
+
+            android:layout_marginTop="480dp"
+            android:layout_marginStart="140dp"
+
+            android:layout_centerHorizontal="true"
+
+            app:cardUseCompatPadding="true"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/txvTotal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:text="Total"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/md_red_400"
+
+                android:padding="4dp"
+                android:background="@drawable/marcos"/>
+
+
+        </android.support.v7.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/btnCalculadora"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="500dp"
+            android:layout_marginEnd="150dp"
+
+            android:layout_alignParentEnd="true"
+
+            android:src="@drawable/calculadora"
+            android:tint="@color/md_white_1000"
+            android:elevation="3dp"
+            android:background="@drawable/selector_botones_principal"
+
+            android:onClick="toCalculadora"/>
+
+    </RelativeLayout>
+
+</ScrollView>

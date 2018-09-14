@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/md_red_500"
+            android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/txtTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/boss"
+                android:textSize="20sp"
+                android:textColor="@color/md_white_1000"/>
+            
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="55dp"
+
+            android:text="@string/admin"
+            android:textSize="40sp"
+            android:textColor="@color/md_red_400"
+            android:textAlignment="center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_marginTop="115dp"
+            android:background="@color/md_grey_400" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="30dp"
+
+            android:text="@string/reg"
+            android:textColor="@color/md_white_1000"
+
+            android:background="@drawable/selector_botones_principal"
+
+            android:onClick="toFormRegistroCuentas"
+            />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
